@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<!-- 
+
+-->
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <body>
+        <div>
+            <label for="first-name">First Name: </label>
+            <input type="text" id="first-name" placeholder="your first name">
+        </div>
+
+        <div>
+            <label for="last-name">Last Name: </label>
+            <input type="text" id="last-name" placeholder="your last name" required>
+        </div>
+
+        <div>
+            <label for="campus">Campus: </label>
+            <input type="text" id="campus" readonly value="Sushant University">
+        </div>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="you@email" required>
+        </div>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="password" placeholder="******" required minlength="6">
+        </div>
+
+        <div>
+            <label for="gender">Gender: </label>
+            <select id="gender" required>
+                <option value="">-- Select --</option>
+                <option value="male">M</option>
+                <option value="female">F</option>
+                <option value="other">O</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="mobile">Mobile: </label>
+            <input type="number" id="mobile" placeholder="10-digit number" min="100000000" max="999999999" required>
+        </div>
+
+        <!--Age: number with validation range
+DOB 
+Profile Pic
+forms and submit
+-->
+        <div>
+            <label for="age">Age </label>
+            <input type="number" id="age" placeholder="enter your age" min="0" required step="2">
+        </div>
+        <div>
+            <label for="DOB">DOB </label>
+            <input type="date" id="DOB" required>
+        </div>
+        <br>
+        <div>
+            <label for="Profile_pic">Profile Pic </label>
+            <input type="file" id="Profile_pic" required>
+        </div>
+        <!-- 
+        1. comment box -> textarea
+        2. reset Button -> input type="reset"
+        3. MCQ -> input type="radio" name 
+        4. where you have multiple selection -> input type="selection" name 
+        -->
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="comment"></textarea>
+        <br>
+        <span>Year of study: </span>
+        <input type="radio" id="1st-year" name="year">
+        <label for="1st-year">1st year</label>
+        <input type="radio" id="2nd-year" name="year">
+        <label for="2nd year">2nd year</label>
+        <input type="radio" id="3rd-year" name="year">
+        <label for="3rd-year">3rd year</label>
+        <input type="radio" id="year-4" name="year">
+        <label for="year-4">4th Year</label>
+    </body>
+    <br>
+
+
+    <p>Select Hobbies:</p>
+    <input type="checkbox" id="hobby-reading" name="hobbies" >
+    <label for="hobby-reading">Reading</label>
+    <input type="checkbox" id="hobby-sports" name="hobbies" >
+    <label for="hobby-sports">Sports</label>
+    <input type="checkbox" id="hobby-music" name="hobbies" >
+    <label for="hobby-music">Music</label>
+
+    <input type="checkbox" id="hobby-coding" name="hobbies" >
+    <label for="hobby-coding">Coding</label>
+    <div>
+        <!-- <input type="submit"></input> -->
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </div>
+    </form>
+</body>
+
+</html>
