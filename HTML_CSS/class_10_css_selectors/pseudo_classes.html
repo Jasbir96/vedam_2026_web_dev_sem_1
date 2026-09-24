@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Challenge</title>
+</head>
+
+<style>
+    /* 4. Select every link (<a>) element when hovered, change its background color to yellow. */
+    /* link state -> when anchor wasn't previosuly clicked */
+    /* link:  normal
+    visited : 
+    hover: when hiver over it
+    active : while being clicked 
+    */
+    a:link {
+        color: yellow;
+    }
+    a:visited{
+     color:red;   
+    }
+     a:hover{
+        background-color: lightgreen;
+    }
+    a:active{
+        background-color: black;
+    }
+   button{
+    background-color: lightgreen;
+    font-size: 1.5rem;
+   }
+   button:hover{
+    font-size: 2rem;
+   }
+
+</style>
+
+<body>
+    <a href="#">This is a link.</a>
+
+
+    <button>
+        hello
+    </button>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .px,
+    .rem,
+    .vh-vw,
+
+    .em {
+        margin-bottom: 20px;
+        background-color: lightgreen;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    /* **************demo starts from here*************/
+
+    /* pixels is an absolute units */
+    .px {
+        font-size: 50px;
+    }
+
+    /* relative unit : rem , em , % , vh,vw */
+
+    .rem {
+        /* default text sise in html ->16px
+by default rem : 1rem=16px
+*/
+        font-size: 1rem;
+    }
+    .vh-vw{
+        /* 80% of your visible window height  */
+        height:80vh;  
+        /*40 % of visible window  width  */
+        width:40vw; 
+    }
+/* percentage */
+
+.gp{
+    height: 10rem;
+    width: 10rem;
+    background-color: lightblue;
+}
+.parent{
+    background-color: lightcoral;
+    height: 50%;
+    width:50%
+}
+
+.child{
+    background-color: blue;
+    height: 50%;
+    width:50%
+}
+</style>
+<body>
+    <div class="vh-vw">VH - VW unit</div>
+    <div class="px">Pixel unit</div>
+    <div class="rem">REM Unit</div>
+    <div class="parent_em">
+        <div class="em">I am em</div>
+    </div>
+
+    <div class="gp">
+        <div class="parent">
+            <div class="child"> percentage </div>
+        </div>
+    </div>
+    <p>Lorem, ipsum.</p>
+
+</body>
