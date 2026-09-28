@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+</head>
+<style>
+   *{
+     font-family: "Lexend", sans-serif;;
+   }
+
+    h2::before {
+        content:"New ";
+        font-size: 1rem;
+        color:lightcoral
+    }
+     /* Add "Read more" link */
+    p::after {
+        /* only presnet when you use pesudo selectors */
+        content: " Read more";
+        color: blue;
+        text-decoration: underline;
+    }
+    ul{
+        list-style: none;
+    }
+    li::before{
+        content: "✦";
+        padding-right: 1rem;
+        
+    }
+</style>
+
+<body>
+    <h1>Latest Articles</h1>
+    <article class="new">
+        <h2>How to Create Stunning CSS Effects</h2>
+        <p>CSS allows you to create amazing visual effects on your website...</p>
+    </article>
+    <article class="new">
+        <h2>Improving Web Performance with Lazy Loading</h2>
+        <p>Lazy loading is an effective technique for optimizing your web page's performance...</p>
+    </article>
+    <article>
+        <h2>Mastering CSS Pseudo-elements</h2>
+        <p>Learn how to use CSS pseudo-elements to enhance your web designs...</p>
+    </article>
+    <blockquote>
+        Design is not just what it looks like and feels like.
+        Design is how it works.
+    </blockquote>
+
+    <h2>Speed</h2>
+    <ul>
+        <li>fetaure-1</li>
+        <li>feature-2</li>
+        <li>feature-3</li>
+    </ul>
+
+</body>
+</html>

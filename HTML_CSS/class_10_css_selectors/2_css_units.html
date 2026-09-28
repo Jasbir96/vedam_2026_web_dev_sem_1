@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,6 @@
     .px,
     .rem,
     .vh-vw,
-
     .em {
         margin-bottom: 20px;
         background-color: lightgreen;
@@ -27,9 +25,7 @@
     .px {
         font-size: 50px;
     }
-
     /* relative unit : rem , em , % , vh,vw */
-
     .rem {
         /* default text sise in html ->16px
 by default rem : 1rem=16px
@@ -54,12 +50,24 @@ by default rem : 1rem=16px
     height: 50%;
     width:50%
 }
-
 .child{
     background-color: blue;
     height: 50%;
     width:50%
 }
+
+.parent_em{
+     height: 50px;
+        background-color: lightslategray;
+        margin-bottom: 10px; 
+        font-size: 20px;
+}
+
+.em{
+        background-color: rgb(141, 84, 84);
+        padding-left:2em;
+}
+
 </style>
 <body>
     <div class="vh-vw">VH - VW unit</div>
@@ -75,5 +83,4 @@ by default rem : 1rem=16px
         </div>
     </div>
     <p>Lorem, ipsum.</p>
-
 </body>
