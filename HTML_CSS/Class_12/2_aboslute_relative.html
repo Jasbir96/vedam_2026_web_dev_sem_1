@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            ;
+            text-align: center;
+        }
+
+        .parent {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 202);
+            width: 90vw;
+            position: relative;
+
+        }
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            border: dashed;
+        }
+
+        .box-1 {
+            background-color: lightblue;
+        }
+
+        .box-2 {
+            background-color: rgb(240, 128, 128);
+            /* position: relative;
+            left:10rem;
+            top:10rem; */
+            /* 
+    relative
+             1. it moves element from it's orginal position and reference point 
+             is  top left corner of that box .
+             2. element  will occupy it's orginal position
+            */
+
+            position: absolute;
+            left:0;
+            top:0;
+            /* ansoplute
+1. element leaves it's original position and the next element will take it's place.
+2. it always positioned  relative to top left of the page 
+3. 
+
+*/
+
+        }
+
+
+        .box-3 {
+            background-color: lightgreen;
+        }
+
+        .box-4 {
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Position - Absolute, Relative </h2>
+
+    <div class="parent">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+
+    </div>
+</body>
+
+</html>
