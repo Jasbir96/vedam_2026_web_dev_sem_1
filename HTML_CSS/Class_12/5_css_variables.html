@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* variable declare */
+    :root {
+        --primary: #3498db;
+        --primary-dark: #2980b9;
+        --text: red;
+        --spacing: 10px;
+        --radius: 8px;
+        --fonts: sans-serif;
+    }
+     body {
+            font-family: var(--fonts);
+            color: var(--text);
+            padding: var(--spacing);
+        }
+    button {
+        background-color: var(--primary);
+        color: white;
+        padding: var(--spacing);
+        border: none;
+        border-radius: var(--radius);
+        cursor:grab;
+    }
+
+    button:hover {
+        background-color: var(--primary-dark);
+    }
+
+    .card {
+        border: 2px solid var(--primary);
+        border-radius: var(--radius);
+        padding: var(--spacing);
+        margin-top: var(--spacing);
+    }
+</style>
+
+<body>
+    <button>Click Me</button>
+    <div class="card">
+        <h2>Card Title</h2>
+        <p>This card uses the same variables as the button.</p>
+    </div>
+</body>
+
+</html>
