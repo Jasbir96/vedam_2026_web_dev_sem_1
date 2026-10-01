@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacking Context</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .parent {
+            margin-left: 1rem;
+            background-color: rgb(146, 85, 202);
+
+        }
+
+
+
+        .box {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            border: dashed;
+        }
+
+        /* template starts from here  */
+        /*  */
+
+
+        .box-3 {
+            background-color: lightgreen;
+
+
+        }
+
+        .box-2 {
+            background-color: rgba(240, 128, 128, 0.664);
+        }
+
+        .box-1 {
+            background-color: lightblue;
+        }
+
+        .box-4 {
+            background-color: lightsalmon;
+
+        }
+
+        .new-box {
+            height: 10rem;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="new-box"></div>
+    <div class="parent">
+        <div class="box box-1">1</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+        <div class="box box-4">4</div>
+    </div>
+
+</body>
+
+</html>
