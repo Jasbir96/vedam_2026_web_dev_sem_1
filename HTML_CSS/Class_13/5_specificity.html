@@ -9,46 +9,38 @@
 </head>
 
 <style>
+    body{
+        font-size: 30px;
+    }
     /* universal selector */
     * {
+    font-size: 35px;
        
-        font-size: 30px;
     }
 
     /* element selector */
     div {
-      
+        font-size: 10px ;
     }
 
     /* class */
     .child {
+        font-size: 15px;
       
     }
 
     div.child {
-       
+       font-size: 12px;
     }
 
     #unique {
-    
-    }
-
-    .parent {
-    }
-
-    a{
-       
-    }
-    
-    .child {
-        color: greenyellow !important;
-
+        font-size: 18px;
     }
 </style>
 
 <body>
 
-    <div class="child" id="unique" style="color:brown">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
+    <div class="child" id="unique" style="font-size: 10px;" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut
         explicabo corrupti,
         asperiores natus quia nostrum! Tempora, asperiores, minus enim vel, nemo doloribus sed ad aliquid quia
         quo quidem doloremque consequuntur.</div>
@@ -64,3 +56,5 @@
 
 </html>
 
+
+<!-- important > inline > id >class> element> universal > useragent>inherited value -->

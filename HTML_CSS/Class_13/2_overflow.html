@@ -17,21 +17,45 @@
         }
         .box {
             height: 100px;
-            width: 100px;
+            width:100px;
             border: 5px solid red;
             margin-top: 50px;
         }
         .overflow {
+            /* default property */
+            /* overflow: visible; */
+            /* hide the extra content */
+            /* overflow: hidden; */
+            /* scroll bar in every direction */
+            overflow: scroll;
+            /* scroll bar in required direction */
+            /* overflow: auto; */
+            
         }
     </style>
 </head>
 
 <body>
-
     <h1>Overflow example</h1>
     <div class="box overflow">
-        Lorem ipsum dolor 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, quaerat!
+        <p>I am content Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa!</p>
+        <p>I am content Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa!</p>
+        <p>I am content Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa!</p>
+        <p>I am content Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa!</p>
+        <p>I am content Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, culpa!</p>
     </div>
 </body>
 
 </html>
+
+
+<!-- 
+default 
+* height : height of the content
+* width :  total available width
+user defined 
+* height :height given by user 
+* width : user defined width
+
+-->

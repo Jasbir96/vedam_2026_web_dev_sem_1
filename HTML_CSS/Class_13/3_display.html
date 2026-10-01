@@ -15,23 +15,114 @@
         font-family: sans-serif;
     }
 
-
     /* template starts from here */
     .block {
         /* height, width, p,m,border */
         background-color: lightblue;
+        display: block;
+
+        border: 1px solid red;
+        /* userdefined height :works */
+        height: 100px;
+        /* userdefined width :works */
+        width: 100px;
+        /* padding */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+
+        /* margin works in horizontal*/
+        margin-left: 10px;
+        /* margin does 
+        not work in vertical directon */
+        margin-top: 10px;
+
     }
 
     .inline {
         background-color: lightgreen;
+        display: inline;
+        border: 5px solid blue;
+        /* userdefined height :not work */
+        height: 100px;
+        /* userdefined width :not work  */
+        width: 100px;
+
+        /* horzintal */
+        padding-left: 30px;
+        /* vertical */
+        padding-top: 30px;
+
+        margin-left: 10px;
+        margin-top:10px;
     }
 
     .inline_block {
-        background-color: mediumorchid;  
+        background-color: mediumorchid;
+        display: inline-block;
+        border: 1px solid red;
+        /* userdefined height :works */
+        height: 100px;
+        /* userdefined width :works */
+        width: 100px;
+        /* padding */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        /* margin works in horizontal*/
+        margin-left: 10px;
+        /* margin does 
+        not work in vertical directon */
+        margin-top: 10px;
+
     }
 </style>
 
 <body>
+    <h2>hello from h2</h2>
+    <!-- block -->
+    <div class="block">Hello Hi how are you</div>
+    <div class="block">Hello Hi how are you</div>
+    <!-- inline -->
+    <div class="inline">I am inline</div>
+    <div class="inline">I am inline</div>
+    <!--  inline block -->
+    <div class="inline_block">I am inline block</div>
+    <div class="inline">I am inline</div>
 </body>
 
 </html>
+
+<!-- 
+1. next element -> new line or not 
+2. padding 
+3. uheight
+4. uwidth
+5. margin
+6. border
+
+block: 
+1. next element -> new line
+2. padding : apply in all directions
+3. uheight: works
+4. uwidth : works 
+5. margin :works 
+6. border : apply in all directions
+inline: 
+1. next element -> in same line
+2. padding : apply in all directions
+3. uheight: not works 
+4. uwidth : not works 
+5. margin : only works horizontally 
+6. border : apply in all directions
+inline-block:  
+1. next element -> in same line 
+2. padding : apply in all directions
+3. uheight: works
+4. uwidth : works
+5. margin:  works 
+6. border : apply in all directions
+-->
