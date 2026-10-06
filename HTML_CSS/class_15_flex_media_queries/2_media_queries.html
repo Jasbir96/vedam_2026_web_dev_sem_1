@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* mobile first */
+        .box {
+            width: 10rem;
+            height: 10rem;
+            background-color: lightcoral;
+        }
+        /* wide mobile and above */
+        @media (min-width: 450px) {
+            .box{
+               background-color: lightgreen;
+               width:15rem; 
+            }
+        }
+        /* tab and above */
+        @media (min-width: 700px) {
+            .box{
+               background-color: purple;
+               /* width:15rem;  */
+               height: 15rem;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>
