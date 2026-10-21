@@ -19,6 +19,7 @@
     }
     .one {
         background-color: aqua;
+
     }
 
     .two {
@@ -27,6 +28,11 @@
 
     .three {
         background-color: lightgreen;
+        transition-property: transform, background-color,
+         border-radius;
+        transition-duration: 2s;
+        transition-delay:300ms;
+        transition-timing-function:ease-out;
     }
     .parent{
         height: 100vh;
@@ -37,10 +43,29 @@
         margin-left:5px ;
         margin-right:5px ;
     }
-    
-
-
-
+    .one:hover{
+        /* background-color: purple; */
+        /* transform: scaleX(2); */
+        /* transform: scaleX(2); */
+        /* transform: scaleY(2); */
+        /* transform: scale(1.2) ; */
+        transform: rotate(50deg);
+        /* transform: rotateX(50deg); */
+        /* transform: rotateY(50deg); */
+    }
+    .two:hover{
+        transform: rotate(50deg);
+    }
+    .three:hover{
+        /* transform: skewX(50deg); */
+        /* transform: skewY(50deg); */
+        /* transform: skew(50deg); */
+        background-color: black;
+        border-radius: 50%;
+        /* horzionatls , vertical */
+        /* transform: translate(-30px,100px); */
+        transform: translateX(-400px);
+    }
 </style>
 
 <body>

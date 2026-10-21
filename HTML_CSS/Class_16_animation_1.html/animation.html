@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 500px;
+            width: 500px;
+            background-color: slategray;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: hotpink;
+
+            animation-name: box-mover;
+            animation-duration: 5s;
+
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes box-mover {
+            20% {
+                transform: translateX(400px);
+            }
+
+            50% {
+                transform: translate(400px, 400px);
+                border-radius: 50%;
+            }
+
+            75% {
+                transform: translateY(400px);
+            }
+            100% {
+                background-color: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+
+</body>
+
+</html>
