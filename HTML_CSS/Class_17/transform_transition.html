@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        height: 200px;
+        width: 200px;
+    }
+    .one {
+        background-color: aqua;
+        transition-property: transform;
+        transition-duration: 1s;
+
+    }
+
+    .two {
+        background-color: lightcoral;
+    }
+
+    .three {
+        background-color: lightgreen;
+        transition-property: transform, background-color,
+         border-radius;
+        transition-duration: 2s;
+        transition-delay:300ms;
+        transition-timing-function:ease-out;
+    }
+    .parent{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        margin-left:5px ;
+        margin-right:5px ;
+    }
+    .one:hover{
+        /* background-color: purple; */
+        /* transform: scaleX(2); */
+        /* transform: scaleX(2); */
+        /* transform: scaleY(2); */
+        /* transform: scale(1.2) ; */
+        transform: rotate(50deg);
+        /* transform: rotateX(50deg); */
+        /* transform: rotateY(50deg); */
+    }
+    .two:hover{
+        transform: rotate(50deg);
+    }
+    .three:hover{
+        /* transform: skewX(50deg); */
+        /* transform: skewY(50deg); */
+        /* transform: skew(50deg); */
+        background-color: black;
+        border-radius: 50%;
+        /* horzionatls , vertical */
+        /* transform: translate(-30px,100px); */
+        transform: translateX(-400px);
+    }
+</style>
+
+<body>
+    <h2>Transform</h2>
+    <div class="parent">
+<div class="box one"></div>
+<div class="box two"></div>
+<div class="box three"></div>
+    </div>
+    
+</body>
+
+</html>
