@@ -27,7 +27,6 @@ console.log("After");
  
 
 function fnWithReturnValue(myNum){
-
     let isEven=myNum%2==0;
     return isEven;
 }
