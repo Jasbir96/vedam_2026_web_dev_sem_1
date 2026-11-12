@@ -5,14 +5,14 @@
 // console.log("str1->",str1);
 
 // // string concatination
-// let myStr = 1 + " " + 2 + " " + 3;
+// let myStr = 1 + " " + 2 + " " + 3 + true;
 // console.log(myStr);
 
 // // template literals
 // let template =`It is also a string
 //         it should have something
 // `;
-// console.log("template", template);
+console.log("template", template);
 
 /*******concatnating in template strings********/ 
 

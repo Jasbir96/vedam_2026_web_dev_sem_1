@@ -32,6 +32,7 @@
 
 
 // let varName;
+
 // varName="i am a string";
 
 // console.log("outcome",varName);

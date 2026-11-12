@@ -16,6 +16,7 @@ myFN()
 console.log("after function");
 
 
+
 function fnWithPara(var1,var2){
     console.log("var1",var1, "var2",var2);
 }
@@ -24,6 +25,11 @@ function fnWithPara(var1,var2){
 console.log("Before");
 fnWithPara(10,20);
 console.log("After");
+
+
+
+
+
  
 
 function fnWithReturnValue(myNum){
@@ -35,3 +41,10 @@ console.log("Before");
 let rValue=fnWithReturnValue(5);
 console.log("result",rValue);
 console.log("After ");
+
+
+
+
+// Variables Types : 
+    //  Primitive Types: number , strings, boolean, undefined, null
+    // Non Primitive Types  : arrays , functions , objects

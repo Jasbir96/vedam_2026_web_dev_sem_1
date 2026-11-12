@@ -1,9 +1,9 @@
-****
- * conditonals
- * -> if else , switch
- * -> loops 
- *  -> for , while , Do while  
- * **/ 
+// ****
+//  * conditonals
+//  * -> if else , switch
+//  * -> loops 
+//  *  -> for , while , Do while  
+//  * **/ 
 
 
 // let number=11;
