@@ -16,8 +16,11 @@ let cap = {
 // access nested objects
 console.log("city", cap.address.city);
 // access nested array value
-console.log("last enemy", cap.enemies
-    [cap.enemies.length-2]);
+console.log("last enemy", cap.enemies[cap.enemies.length-2]);
 
 cap.greet();
+
+
+
+
 

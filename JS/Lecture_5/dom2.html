@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="greeting">Hello!</p>
+    <p id="bye">Hello again</p>
+    <p class="info">Line 1</p>
+    <p class="info1">Line 2</p>
+    <p class="note">Note 1</p>
+    <p class="note">Note 2</p>
+    <script>
+
+/**
+ * 1. print content of p with id="bye" console
+// 2. update id=greeting textcontent Bye again
+ * 3. change background color of p with class  info
+ * 
+ * **/
+
+ let byeP=document.querySelector("#bye");
+ console.log(byeP.textContent)
+
+let greetIngP=document.querySelector("#greeting");
+greetIngP.textContent="Bye again";
+let infoP=document.querySelector(".info");
+infoP.style.backgroundColor="lightblue";
+
+    </script>
+
+
+</body>
+
+</html>

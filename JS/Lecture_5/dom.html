@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>OrderList</h2>
+    <!-- <script src="1_object.js"></script>  -->
+    <ul>
+        <li>Task-1</li>
+        <li>Task-2</li>
+    </ul>
+    <script>
+        // browser -> document object that represents your webpage
+    console.log("document", document);
+        // control the whole page using is document object ;
+// border
+// find the element
+let ulElem=document.querySelector("ul");
+// do the operation
+ulElem.style.border="5px solid red";
+// Step-1 -> if element is found
+let h2Elem=document.querySelector("h2");
+// update the element 
+h2Elem.textContent="Shopping Cart";
+    </script>
+</body>
+
+</html>
