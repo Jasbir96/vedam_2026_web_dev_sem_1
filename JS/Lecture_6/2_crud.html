@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 id="greetings">Original heading</h3>
+    <p>I'm an old Para. Pls :/</p>
+    <script>
+   let greetingElem=document.querySelector("#greetings");
+   greetingElem.textContent= "I have been modified";
+    //2. Create + append a new div Play Play Play!
+    // create element
+    let playDiv=document.createElement("div");
+    // add content + styling
+    playDiv.textContent="Play Play Play!";
+    // append that element to the DOM tree
+   let bodyElem=document.querySelector("body");
+   bodyElem.appendChild(playDiv);
+   //3. remove the first Para
+   let p=document.querySelector("p");
+   p.remove();
+    </script>
+</body>
+</html>
