@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <style>
-   #btn-event-helper{
-    height: 100px;
-    width: 100px;
-    border: 2px solid red;
-   } 
+    #btn-event-helper {
+        height: 100px;
+        width: 100px;
+        border: 2px solid red;
+    }
 </style>
+
 <body>
     <h2>Events</h2>
     <!-- 
@@ -19,20 +21,65 @@
     Keyboard : keypress
     Touch  : 
     -->
-
     <div id="btn-event-helper"></div>
-
     <button id="btn-events">Change BG
     </button>
-
+    <h2>Keyboard Events</h2>
+    <input type="text">
+    <p></p>
     <script>
-// task
-        // -> btn -> hover : lightblue
+        // task
+        // -> btn -> hover in button : lightblue
+        // hover out button: transparent 
         // -> btn -> right click : lightred
-        // -> btn -> left click : lightcyan
+        // -> btn -> left click : lightcyan  
+        // select element -> apply the changes
+        let button = document.querySelector("#btn-events");
 
+        button.addEventListener("mouseenter", function () {
+            // to make div lightblue
+            let div = document.querySelector("#btn-event-helper");
+            div.style.backgroundColor = "lightblue";
+        })
+        button.addEventListener("mouseleave", function () {
+            let div = document.querySelector("#btn-event-helper");
+            div.style.backgroundColor = "transparent";
+        })
+        button.addEventListener("click", function () {
+            let div = document.querySelector("#btn-event-helper");
+            div.style.backgroundColor = "yellow";
+        })
+        button.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+
+            let div = document.querySelector("#btn-event-helper");
+            div.style.backgroundColor = "red";
+        })
+
+        // keybord inputs
+        // 1. input selection 
+        let input = document.querySelector("input");
+        // 2. whenever any keyboard key is pressed then i want to know what has changed
+        // hello
+        let str = "";
+        input.addEventListener("keydown", function (e) {
+            // 3. apply all that change to my p tag
+            console.log("event object", e.key);
+            let p = document.querySelector("p");
+            str = str + e.key;
+            p.textContent = str;
+        })
+
+        input.addEventListener("input", function (e) {
+            // 3. apply all that change to my p tag
+            console.log("event object", e.target.value);
+            let p = document.querySelector("p");
+            // str = str + e.target.value;
+            p.textContent = e.target.value;
+        })
 
     </script>
 
 </body>
+
 </html>
