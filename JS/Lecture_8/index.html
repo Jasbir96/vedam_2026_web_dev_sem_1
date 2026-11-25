@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>functio and scope</h2>
+    <script>
+
+        let a = 10;
+        let b;
+        function fn() {
+            let a = 20;
+            let b = 30;
+            console.log("18 a", a, "b", b);
+        }
+        console.log("20 a", a, "b", b);
+        fn();
+        console.log("22 a", a, "b", b);
+    </script>
+</body>
+
+</html>
