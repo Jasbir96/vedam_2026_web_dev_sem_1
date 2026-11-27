@@ -111,9 +111,9 @@
         let optionB = document.querySelector("#optionB")
         let optionC = document.querySelector("#optionC")
         let optionD = document.querySelector("#optionD");
-                // find the parent element
+        // find the parent element
 
-        let quizList=document.querySelector("#quizList");
+        let quizList = document.querySelector("#quizList");
 
         addBtn.addEventListener("click", function () {
             // we have to do add validation-> of non empty
@@ -131,8 +131,8 @@
             if (isNotEmpty) {
                 //  question gets added
                 // alert("creating question");
-             let questionCard= document.createElement("div");
-             let innerElements=`<h3>${questionValue}</h3>
+                let questionCard = document.createElement("div");
+                let innerElements = `<h3>${questionValue}</h3>
                     <ul>
                         <li>A. ${optionAValue}</li>
                         <li>B. ${optionBValue}</li>
@@ -140,10 +140,27 @@
                         <li>D. ${optionDValue}</li>
                     </ul><button class="delete-btn">Delete</button>`;
                 // append 
-                questionCard.innerHTML=innerElements;
-                questionCard.className="question-card";
+                questionCard.innerHTML = innerElements;
+                questionCard.className = "question-card";
                 quizList.appendChild(questionCard);
                 //clear input
+                questionInput.value="";
+                optionA.value = "";
+                optionB.value = "";
+                optionC.value = "";
+                optionD.value = "";
+
+                // delete 
+                let deleteBtn = questionCard.querySelector("button");
+                deleteBtn.addEventListener("click", function () {
+                    questionCard.remove();
+                })
+
+
+
+
+
+
             } else {
                 alert("one of the filed is empty");
             }
@@ -152,3 +169,7 @@
 </body>
 
 </html>
+
+
+
+<!--  -->
